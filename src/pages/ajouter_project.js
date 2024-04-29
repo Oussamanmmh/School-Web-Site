@@ -10,7 +10,12 @@ import {
     Button,
   } from "@material-tailwind/react";
   import { useState , useEffect , useRef  } from "react";
+  import {useForm} from "react-hook-form"
+import DialogeDisplay from "../component/dialoge";
 const AjouterProject = () => {
+
+  const {register , controle} = useForm()
+
 
   const [isLoading , setIsloading] = useState(false)
   const [Numero , setNumero] = useState('')
@@ -79,7 +84,7 @@ const AjouterProject = () => {
  
          <CardBody className="flex flex-col gap-2">
       
-        <Input type="number" label="Numero" className="" size="md" error={error.Numero}  onChange={(e)=>setNumero(e.target.value)} />
+        <Input type="number" label="Numero" name="number" className="" size="md" error={error.Numero}  onChange={(e)=>setNumero(e.target.value)} />
           {(error.Numero)&&<p className="text-red-500 ml-5 mt-0 mb-0 text-xs" >Veuillez saisir le numéro de projet</p>}
         <Input label="Titre" size="lg"   error={error.titre} onChange={(e)=>setTitre(e.target.value)} />
         {(error.titre)&&<p className="text-red-500 ml-5 text-xs" >Veuillez saisir le titre de projet</p>}
@@ -99,25 +104,7 @@ const AjouterProject = () => {
       <Button  loading={isLoading} variant="gradient" onClick={handleOpen} className="" >
           Ajouter
         </Button>
-        <Dialog open={open} handler={handleOpen} size="xs" >
-        <DialogHeader>Ajouter le project </DialogHeader>
-        <DialogBody>
-          Vous etes sur de vouloir ajouter ce projet ?
-        </DialogBody>
-        <DialogFooter>
-          <Button
-            variant="text"
-            color="red"
-            onClick={handleOpen}
-            className="mr-1"
-          >
-            <span>Cancel</span>
-          </Button>
-          <Button variant="gradient" color="green" onClick={onsubmit}>
-            <span>Confirm</span>
-          </Button>
-        </DialogFooter>
-      </Dialog>
+       <DialogeDisplay open={open} handleOpen={handleOpen} onsubmit={onsubmit} />
       </CardFooter>
     </Card>
     </form>
