@@ -1,22 +1,15 @@
 import {
     Card,
-    CardHeader,
     CardBody,
     CardFooter,
-    Typography,
     Input,
     Dialog,
     DialogHeader,
     DialogBody,
     DialogFooter,
-    
     Button,
   } from "@material-tailwind/react";
   import { useState , useEffect , useRef  } from "react";
-  import Alertcomp from '../component/alert';
-import DialogeDisplay from "../component/dialoge";
-  
-
 const AjouterProject = () => {
 
   const [isLoading , setIsloading] = useState(false)
