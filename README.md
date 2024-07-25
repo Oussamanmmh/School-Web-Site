@@ -20,12 +20,15 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https<img width="368" alt="smart" src="https://github.com/user-attachments/assets/191e442c-b168-4a92-a4f3-62ea397b151c">
+://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for productio<img width="371" alt="school" src="https://github.com/user-attachments/assets/281a2700-0d5e-4fc7-b4bf-5e4341165a6f">
+n to the `build` folder.\
+It correctly bundles <img width="371" alt="smartlangue" src="https://github.com/user-attachments/assets/63d1a9f8-e70c-4152-80a0-fda97974ce68">
+React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
