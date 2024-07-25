@@ -14,7 +14,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make ch<img width="362" alt="school1" src="https://github.com/user-attachments/assets/448d5549-690e-4f74-81d6-923298de1451">
+anges.\<img width="371" alt="smart2" src="https://github.com/user-attachments/assets/53bf797d-57c4-4cc5-8b47-af37da09c29f">
+
 You may also see any lint errors in the console.
 
 ### `npm test`
