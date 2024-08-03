@@ -17,7 +17,7 @@ import {
         <PopoverHandler>
           <Button className="ml-20">Contact Us</Button>
         </PopoverHandler>
-        <PopoverContent className="w-72">
+        <PopoverContent className="w-72 z-50">
           <div className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4">
             <Avatar src={logo} alt="LOGO" />
             <div>

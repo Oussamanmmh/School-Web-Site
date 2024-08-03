@@ -17,7 +17,7 @@ import Card from "../components/card";
                     console.log(data)
                 }
             }
-           fetchTeachers()
+         //  fetchTeachers()
           
         } , [])
 
@@ -66,22 +66,8 @@ import Card from "../components/card";
                             Our teachers are highly qualified and experienced professionals who are dedicated to helping you learn a new language. They are native speakers of the languages they teach and have a deep understanding of the language and culture.
                         </p>
     
-                {error && <p className="text-red-500">An error occurred: {error.message}</p> }
-                {/* Cards start */}
-    {/* Repeat this block for each teacher */}
-    {teachers && (
-         <div className="flex flex-nowrap overflow-x-auto  mb-20 custom-scrollbar">
- 
-        { teachers.map((teacher) => (
-            
-        <Card key={teacher.id} firstname={teacher.first_name} lastname={teacher.last_name} lang={teacher.language} />
+             
     
-        
-    ))}
-    </div>
-    )
-
-    }
     {/* Cards end */}
                     </div>
     

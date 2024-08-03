@@ -3,7 +3,6 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footercomp from './components/footer';
 import Aboutus from './pages/about';
-import Courses from './pages/courses';
 import HomePage from './pages/homepage';
 import Location from './pages/location';
 
